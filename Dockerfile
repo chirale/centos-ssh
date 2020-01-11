@@ -45,6 +45,8 @@ RUN rpm --rebuilddb \
 	&& easy_install \
 		'supervisor == 4.0.4' \
 		'supervisor-stdout == 0.1.1' \
+	&& easy_install -U \
+		'mercurial' \
 	&& mkdir -p \
 		/var/log/supervisor/ \
 	&& rm -rf /etc/ld.so.cache \
