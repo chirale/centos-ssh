@@ -22,7 +22,6 @@ RUN rpm --rebuilddb \
 		centos-release-scl \
 		centos-release-scl-rh \
 		epel-release \
-		python27-python-devel \
 		https://centos7.iuscommunity.org/ius-release.rpm \
 	&& yum -y install \
 			--setopt=tsflags=nodocs \
@@ -33,6 +32,7 @@ RUN rpm --rebuilddb \
 		openssl-1.0.2k-19.el7 \
 		python-setuptools-0.9.8-7.el7 \
 		sudo-1.8.23-4.el7 \
+		python27-python-devel \		
 		yum-plugin-versionlock-1.1.31-52.el7 \
 	&& yum versionlock add \
 		inotify-tools \
