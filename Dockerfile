@@ -22,6 +22,7 @@ RUN rpm --rebuilddb \
 		centos-release-scl \
 		centos-release-scl-rh \
 		epel-release \
+		python27-python-devel \
 		https://centos7.iuscommunity.org/ius-release.rpm \
 	&& yum -y install \
 			--setopt=tsflags=nodocs \
